@@ -23,7 +23,7 @@ class func(nextcord.ui.Modal):
         return
 
 @bot.slash_command(name="command", description="説明")
-async def food_slash(interaction: Interaction):
+async def _slash(interaction: Interaction):
     modal = func()
     await interaction.response.send_modal(modal=modal)
 
